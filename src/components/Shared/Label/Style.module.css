@@ -1,0 +1,20 @@
+.base {
+    background: red;
+    display: inline-block;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 55px;
+    position: relative;
+    width: 80px;
+  }
+.base::after {
+    border-top: 35px solid red;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    bottom: -35px;
+    width: 0;
+}
